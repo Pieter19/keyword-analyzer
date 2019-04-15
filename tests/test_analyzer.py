@@ -19,7 +19,7 @@ class AnalyzerTest(TestCase):
 
     def test_url_missing_protocol(self):
         self.assertRaises(ValidationError, parse_url, 'pirc.pl')
-        
+
     def test_url_random_string(self):
         self.assertRaises(ValidationError, parse_url, 'pasdasdasdl')
 
