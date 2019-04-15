@@ -1,0 +1,274 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.21.0
+    method: GET
+    uri: http://pirc.pl/
+  response:
+    body:
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.13.7</center>\r\n</body>\r\n</html>\r\n"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '185'
+      Content-Type:
+      - text/html
+      Date:
+      - Mon, 15 Apr 2019 21:20:12 GMT
+      Location:
+      - https://pirc.pl/
+      Server:
+      - nginx/1.13.7
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.21.0
+    method: GET
+    uri: https://pirc.pl/
+  response:
+    body:
+      string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<link rel=\"shortcut icon\"
+        type=\"image/x-icon\" href=\"/favicon.ico\" />\n<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=UTF-8\" />\n<meta name=\"keywords\" content=\"irc,
+        polska, polski, internet, relay, chat\" />\n<meta name=\"description\" content=\"PIRC.PL
+        - Polska sie\u0107 IRC - oficjalna strona polskiej sieci IRC PIRC - nowatorskie
+        rozwi\u0105zania (takie jak konwersja kodowania, czy API do statystyk na w\u0142asne
+        strony). Polska administracja, wsparcie dla grup i projekt\xF3w, pomoc z IRC,
+        serwisy\" />\n<meta name=\"author\" content=\"Jakub 'samu' Szafra\u0144ski,
+        Tril\" />\n<meta http-equiv=\"content-language\" content=\"pl\" />\n<meta
+        name=\"google-site-verification\" content=\"YjyPikHV1OZu2wy-5wRBFGq67cvZRLfMrqga4h42VUc\"
+        />\n<title>Strona g\u0142\xF3wna - PIRC.PL - Polska sie\u0107 IRC</title>\n<link
+        rel=\"stylesheet\" href=\"/styles/sub.css\" />\n<link rel=\"stylesheet\" href=\"/styles/main.css\"
+        />\n\n<script src=\"/js/jquery-1.2.1.min.js\" type=\"text/javascript\"></script>\n<meta
+        name=\"robots\" content=\"all\" />\n<script type=\"text/javascript\">\n\n
+        \ var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-20906963-2']);\n
+        \ _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga = document.createElement('script');
+        ga.type = 'text/javascript'; ga.async = true;\n    ga.src = ('https:' == document.location.protocol
+        ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n    var
+        s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,
+        s);\n  })();\n\n</script>\n</head>\n<body>\n<!--\n\t\t<script type=\"text/javascript\">\n\t\t\t$.ajax({\n\t\t\t\ttype:
+        \"GET\",\n\t\t\t\turl: \"http://pirc.pl/api/PIRC\",\n\t\t\t\tdataType: \"xml\",\n\t\t\t\tsuccess:
+        function(data) {\n\t\t\t\t\t$(data).find('pirc').each(function() {\n\t\t\t\t\t\t$('.users').text($(this).find('clients').text());\n\t\t\t\t\t\t$('.channels').text($(this).find('channels').text());\n\t\t\t\t\t\t$('.servers').text($(this).find('servers').text());\n\t\t\t\t\t\t$('.messages').text($(this).find('messages').text());\n\t\t\t\t\t});\n\t\t\t\t}\n\t\t\t});\n\t\t</script>\n-->\n\n
+        \   <div id=\"logo\">\n        <div id=\"logoimg\">\n        </div>\n    </div>\n
+        \   <div id=\"menu\">\n    <div id=\"menuwrapper\">\n        <ul class=\"main\">\n
+        \           <li class=\"first main\"><a class=\"main\" href=\"/\">Strona g\u0142\xF3wna</a></li>\n
+        \           <li class=\"main\"><a href=\"/bramka\">Bramka</a></li>\n            <li
+        class=\"main\"><a id=\"info\" href=\"#\">Informacje</a>\n                <ul>\n
+        \                   <li><a href=\"/teksty/zasady\">Regulamin</a></li>\n                    <li><a
+        href=\"/prace\">Prace</a></li>\n                    <li><a href=\"/teksty/p_iline\">I:Line</a></li>\n
+        \                   <li><a href=\"/teksty/ssl\">SSL</a></li>\n                    <li><a
+        href=\"/teksty/p_tor_proxy\">Tor i proxy</a></li>\n                    <li><a
+        href=\"/teksty/p_pomoc_administracji\">Pomoc administracji</a></li>\n                    <li><a
+        href=\"/teksty/p_api\">API</a></li>\n                    <li><a href=\"/teksty/p_bannery\">Bannery</a></li>\n
+        \                   <li><a href=\"/teksty/o_nas\">O nas</a></li>\n                    <li><a
+        href=\"/teksty/p_logo\">Logo</a></li>\n                    <li><a href=\"/teksty/polecane\">Polecane</a></li>\n
+        \               </ul>\n            </li>\n            <li class=\"main\"><a
+        href=\"#\">Pomoc</a>\n                <ul>\n                    <li><a href=\"/teksty/pomoc\">Podstawy</a></li>\n
+        \                   <li><a href=\"/teksty/p_instalacja_i_konfiguracja\">Oprogramowanie</a></li>\n
+        \                   <li><a href=\"/teksty/kanaly\">Kana\u0142y</a></li>\n
+        \                   <li><a href=\"/teksty/uzytkownicy\">U\u017Cytkownicy</a></li>\n
+        \                   <li><a href=\"/teksty/komendy\">Lista komend</a></li>\n
+        \                   <li><a href=\"/teksty/p_certfp\">Certyfikaty klienta</a></li>\n
+        \                   <li><a href=\"/teksty/p_kodowanie\">Konwersja kodowania</a></li>\n
+        \                   <li><a href=\"/teksty/p_problemy\">Cz\u0119ste problemy</a></li>\n
+        \                   <li><a href=\"/teksty/bramka\">Bramka WWW</a></li>\n                </ul>\n
+        \           </li>\n            <li class=\"main\"><a href=\"#\">Serwisy</a>\n
+        \               <ul>\n                    <li><a href=\"/teksty/p_nickserv\">NickServ</a></li>\n
+        \                   <li><a href=\"/teksty/p_chanserv\">ChanServ</a></li>\n
+        \                   <li><a href=\"/teksty/p_botserv\">BotServ</a></li>\n                    <li><a
+        href=\"/teksty/p_hostserv\">HostServ</a></li>\n                    <li><a
+        href=\"/teksty/p_memoserv\">MemoServ</a></li>\n                </ul>\n            </li>\n
+        \           <li class=\"main\"><a href=\"/serwery\">Serwery</a></li>\n            <li
+        class=\"main\"><a href=\"#\">Statystyki</a>\n                <ul>\n                    <li><a
+        href=\"/statystyki\">Podsumowanie</a></li>\n                    <li><a href=\"/statystyki/wykresy\">Wykresy</a></li>\n
+        \                   <li><a href=\"/statystyki/kanaly\">Lista kana\u0142\xF3w</a></li>\n\t\t
+        \   <li><a href=\"http://statystyki.pirc.pl/kanaly/\" class=\"external\">Statystyki
+        kana\u0142\xF3w</a></li>\n                </ul>\n            </li>\n            <li
+        class=\"main\"><a href=\"/teksty/kontakt\">Kontakt</a></li>\n            <li
+        class=\"main\"><a href=\"/panel\">Zaloguj</a>\n                <ul>\n                    <li><a
+        href=\"/resetpass\">Zresetuj has\u0142o</a></li>\n                </ul>\n
+        \           </li>\n        </ul>\n    </div>\n    </div>\n\n    <div id=\"maincontainer\">\n
+        \       <div id=\"wrapper\">\n\n<h1>Strona g\u0142\xF3wna</h1>\n<hr class=\"h1\"
+        />\n<p>Witamy na stronie sieci PIRC, oferuj\u0105cej dost\u0119p do <b>Internet
+        Relay Chat</b>! Znajdziesz tu informacje o naszej sieci (list\u0119 serwer\xF3w,
+        ich adresy, og\u0142oszenia, regulamin i ciekawostki) oraz informacje na temat
+        IRC samego w sobie.</p>\n\n<a id=\"w_skrocie_o_nas\"></a>\n<h3>W skr\xF3cie
+        o nas <a title=\"Permalink do tego akapitu\" href=\"#w_skrocie_o_nas\">\xB6</a></h3>\n\n<table
+        cellspacing=\"0\" cellpadding=\"0\">\n    <tr>\n        <td style=\"border-bottom:
+        1px dotted #9B9C9E; border-top: 1px dotted #9B9C9E; width: 454px; border-right:
+        1px dotted #9B9C9E; padding-right: 20px; background: url('/styles/img/techbg.png')
+        no-repeat top right;\">\n                    <p>Sie\u0107 PIRC.PL korzysta
+        z UnrealIRCd, nowoczesnego daemona IRC posiadaj\u0105cego wiele funkcji, kt\xF3rych
+        w klasycznym IRC nie ma (np. status p\xF3\u0142operatora, czy te\u017C dodatkowy
+        system ban\xF3w). Posiadamy r\xF3wnie\u017C specjalny modu\u0142 konwersji
+        kodowania, dzi\u0119ki kt\xF3remu ka\u017Cdy, niezale\u017Cnie od tego, jakiego
+        programu u\u017Cywa, jest w stanie bez problem\xF3w dogada\u0107 si\u0119
+        z pozosta\u0142ymi u\u017Cywaj\u0105c polskich znak\xF3w!</p>\n        </td>\n
+        \       <td style=\"border-bottom: 1px dotted #9B9C9E; border-top: 1px dotted
+        #9B9C9E; border-left: 1px solid #FFF; padding-left: 20px; background: url('/styles/img/secure.png')
+        no-repeat top left;\">\n            <p>Nasze serwery uzupe\u0142niaj\u0105
+        serwisy Anope, umo\u017Cliwiaj\u0105ce rejestracj\u0119 swojego nicka (dzi\u0119ki
+        czemu nikt pr\xF3cz nas nie b\u0119dzie m\xF3g\u0142 z niego korzysta\u0107),
+        rejestracj\u0119 w\u0142asnego kana\u0142u, stawianie bot\xF3w kopi\u0105cych
+        za ustalone przez nas s\u0142owa oraz wiele, wiele innych.</p>\n        </td>\n
+        \   </tr>\n    <tr>\n        <td style=\"width: 454px;  border-right: 1px
+        dotted #9B9C9E; padding-right: 20px; height: 100%; background: url('/styles/img/apibg.png')
+        no-repeat top right; border-bottom: 1px dotted #9B9C9E;\">\n            <p
+        style=\"padding-top: 15px;\">Udost\u0119pniamy specjalne <a href=\"/teksty/p_api\">API</a>
+        pozwalaj\u0105ce w prosty spos\xF3b umie\u015Bci\u0107 dane o naszych kana\u0142ach
+        na w\u0142asnej stronie. Wystarczy tylko niewielka znajomo\u015B\u0107 PHP/Python/JavaScript,
+        a na naszej stronie mog\u0105 pojawi\u0107 si\u0119 informacje o naszych kana\u0142ach
+        bez konieczno\u015Bci stawiania w\u0142asnych bot\xF3w.</p>\n            <p>Udost\u0119pniamy
+        r\xF3wnie\u017C <a href=\"/teksty/p_bannery\">automatycznie generowane bannery</a>
+        z informacjami o naszych kana\u0142ach, kt\xF3re mo\u017Cemy wrzuci\u0107
+        do podpisu na forum, czy na stron\u0119.</p>\n        </td>\n        <td  style=\"width:
+        454px; border-left: 1px solid #FFF; padding-left: 20px; background: url('/styles/img/workbg.png')
+        no-repeat top left; border-bottom: 1px dotted #9B9C9E;\">\n            <p
+        style=\"padding-top: 15px;\">Pracujemy tak, \u017Ceby wszystkim u\u017Cytkownikom
+        \u017Cy\u0142o si\u0119 jak najlepiej (ale prosimy te\u017C u\u017Cytkownik\xF3w
+        \u017Ceby tak samo zachowywali si\u0119 w stosunku do nas ;) ). Nie wtr\u0105camy
+        si\u0119 do kana\u0142\xF3w za\u0142o\u017Conych przez u\u017Cytkownik\xF3w,
+        chyba \u017Ce \u017Cycz\u0105 oni sobie inaczej.</p>\n        </td>\n    </tr>\n</table>\n\n<a
+        id=\"dlaczego_my\"></a>\n<h3>Dlaczego my? <a title=\"Permalink do tego akapitu\"
+        href=\"#dlaczego_my\">\xB6</a></h3>\n<ul class=\"whyus\">\n\t<li>Przyjazna,
+        polska administracja - pomocy udzielamy od r\u0119ki w ojczystym j\u0119zyku.</li>\n\t<li>Nie
+        wprowadzamy bezsensownych polityk dotycz\u0105cych nazewnictwa kana\u0142\xF3w
+        - mo\u017Cesz zarejestrowa\u0107 ka\u017Cd\u0105, nieobra\u017Aliw\u0105 i
+        nie\u0142ami\u0105c\u0105 prawa nazw\u0119.</li>\n\t<li>Nasze serwisy komunikuj\u0105
+        si\u0119 z u\u017Cytkownikiem w j\u0119zyku polskim, a nasz modu\u0142 konwersji
+        kodowania u\u0142atwia komunikacje mi\u0119dzy osobami posiadaj\u0105cymi
+        r\xF3\u017Cne oprogramowanie. Serwisy potrafi\u0105 r\xF3wnie\u017C wysy\u0142a\u0107
+        komunikaty w innych j\u0119zykach.</li>\n</ul>\n\n<a id=\"jak_do_nas_dolaczyc\"></a>\n<h3>Jak
+        do nas do\u0142\u0105czy\u0107? <a title=\"Permalink do tego akapitu\" href=\"#jak_do_nas_dolaczyc\">\xB6</a></h3>\n<p><b>U\u017Cywaj\u0105c
+        programu do IRC:</b></p>\n<p>Je\u017Celi umiesz ju\u017C to zrobi\u0107, po\u0142\u0105cz
+        si\u0119 z serwerem irc.pirc.pl (najcz\u0119\u015Bciej robi si\u0119 to przy
+        u\u017Cyciu komendy <code>/server irc.pirc.pl</code>).</p>\n<p>Je\u015Bli
+        chcesz po\u0142\u0105czy\u0107 si\u0119 z nasz\u0105 sieci\u0105 korzystaj\u0105c
+        z <b>bezpiecznego, szyfrowanego po\u0142\u0105czenia</b>, <a href=\"/teksty/ssl\">przeczytaj
+        t\u0119 stron\u0119</a>.</p>\n<p>Mo\u017Cesz r\xF3wnie\u017C zobaczy\u0107
+        nasz\u0105 <a href=\"/teksty/p_instalacja_i_konfiguracja\">list\u0119 kilku
+        program\xF3w IRC i opis ich konfiguracji</a>.</p>\n\n<p><b>Przez przegl\u0105dark\u0119
+        WWW:</b></p>\n<p>Mo\u017Cesz tak\u017Ce do\u0142\u0105czy\u0107 do nas przez
+        <a href=\"/bramka\">bramk\u0119</a> na stronie www, lub po prostu <a href=\"/statystyki/kanaly\">klikaj\u0105c
+        na nazw\u0119 kana\u0142u na li\u015Bcie.</a></p>\n\n<a id=\"jak_stworzyc_u_nas_kanal_irc\"></a>\n<h3>Jak
+        stworzy\u0107 u nas kana\u0142 IRC? <a title=\"Permalink do tego akapitu\"
+        href=\"#jak_stworzyc_u_nas_kanal_irc\">\xB6</a></h3>\n<p>Po prostu na niego
+        wejd\u017A. Je\u015Bli b\u0119dziesz na kanale jako pierwszy, dostaniesz na
+        nim status operatora. Nast\u0119pnie <a href=\"/teksty/p_nickserv\">zarejestruj
+        sw\xF3j nick</a>, a potem <a href=\"/teksty/p_chanserv\">sw\xF3j kana\u0142</a>
+        - to wszystko!</p>\n<p>Je\u015Bli nadal b\u0119dziesz mia\u0142 problemy,
+        wejd\u017A na kana\u0142 <code>#help</code> i zadaj swoje pytanie - kto\u015B
+        z administracji na pewno udzieli Ci pomocy.</p>\n        </div>\n    </div>\n\n
+        \   <div id=\"bottomcontainer\">\n        <div id=\"bottomwrapper\">\n\t\t<table>\n\t\t<tr><td
+        style=\"width: 440px;\" valign=\"top\">\n                <h3>Strona g\u0142\xF3wna</h3>\n
+        \               <p><a href=\"/\"><b>Strona g\u0142\xF3wna</b></a> - Kr\xF3tki
+        opis sieci i podstawowe informacje na jej temat.</p>\n                <h3>Bramka</h3>\n
+        \               <p><a href=\"/bramka\"><b>Bramka</b></a> - Specjalny interfejs
+        WWW umo\u017Cliwiaj\u0105ca ircowanie z przegl\u0105darki, bez konieczno\u015Bci
+        instalowania dodatkowego oprogramowania.</p>\n                <h3>Informacje</h3>\n
+        \               <p><a href=\"/teksty/zasady\"><b>Regulamin</b></a> - zbi\xF3r
+        zasad kt\xF3rych u\u017Cytkownicy PIRC.PL s\u0105 zobowi\u0105zani przestrzega\u0107.</p>\n
+        \               <p><a href=\"/prace\"><b>Prace</b></a> - informacje na temat
+        prac, kt\xF3re administratorzy sieci aktualnie wykonuj\u0105. W tym miejscu
+        b\u0119d\u0105 r\xF3wnie\u017C zamieszczane wszelkie wa\u017Cniejsze og\u0142oszenia.</p>\n
+        \               <p><a href=\"/teksty/p_iline\"><b>I:Line</b></a> - informacje
+        dla administrator\xF3w serwer\xF3w shell, akademik\xF3w, sieci osiedlowych
+        i ka\u017Cdego innego miejsca, kt\xF3re wymaga po\u0142\u0105czenia do naszej
+        sieci wi\u0119cej os\xF3b z jednego adresu IP.</p>\n                <p><a
+        href=\"/teksty/ssl\"><b>SSL</b></a> - informacje dla os\xF3b chc\u0105cych
+        po\u0142\u0105czy\u0107 si\u0119 z nasz\u0105 sieci\u0105 korzystaj\u0105c
+        z bezpiecznego po\u0142\u0105czenia SSL.</p>\n                <p><a href=\"/teksty/p_tor_proxy\"><b>Tor
+        i proxy</b></a> - informacje dla os\xF3b pr\xF3buj\u0105cych po\u0142\u0105czy\u0107
+        si\u0119 z nasz\u0105 sieci\u0105 z serwer\xF3w TOR i PROXY.</p>\n\t\t<p><a
+        href=\"/teksty/p_pomoc_administracji\"><b>Pomoc administracji</b></a> - dodatkowa
+        pomoc w pilnowaniu porz\u0105dku na naszym kanale.</p>\n                <p><a
+        href=\"/teksty/p_api\"><b>API</b></a> - opis naszego modu\u0142u do wy\u015Bwietlania
+        statystyk kana\u0142u na w\u0142asnej stronie WWW.</p>\n                <p><a
+        href=\"/teksty/p_bannery\"><b>Bannery</b></a> - generowane przez nasz\u0105
+        stron\u0119 banery z informacjami o kana\u0142ach.</p>\n                <p><a
+        href=\"/teksty/p_logo\"><b>Logo</b></a> - informacje na temat naszego logo</p>\n
+        \               <p><a href=\"/teksty/o_nas\"><b>O nas</b></a> - nieco wi\u0119cej
+        informacji na temat sieci i nas, administrator\xF3w, oraz kr\xF3tka historia
+        powstania tego miejsca.</p>\n                <p><a href=\"/teksty/polecane\"><b>Polecane</b></a>
+        - ma\u0142a reklama - strony kt\xF3re sie\u0107 PIRC.PL poleca u\u017Cytkownikom.</p>\n\t\t</td>\n\t\t<td
+        style=\"float: right; padding-left: 40px;\" valign=\"top\">\n                <h3>Serwisy</h3>\n
+        \               <p><a href=\"/teksty/p_nickserv\"><b>NickServ</b></a> - rejestracja
+        nick\xF3w.</p>\n                <p><a href=\"/teksty/p_chanserv\"><b>ChanServ</b></a>
+        - rejestracja kana\u0142\xF3w.</p>\n                <p><a href=\"/teksty/p_botserv\"><b>BotServ</b></a>
+        - postawienie na swoim kanale bota.</p>\n                <p><a href=\"/teksty/p_hostserv\"><b>HostServ</b></a>
+        - ukrywanie swojego adresu IP.</p>\n                <p><a href=\"/teksty/p_memoserv\"><b>MemoServ</b></a>
+        - wiadomo\u015Bci do niezalogowanych u\u017Cytkownik\xF3w.</p>\n\n                <h3>Pomoc</h3>\n
+        \               <p><a href=\"/teksty/pomoc\"><b>Podstawy</b></a> - miejsce
+        od kt\xF3rego ka\u017Cdy pocz\u0105tkuj\u0105cy powinien zacz\u0105\u0107.
+        Zbi\xF3r podstawowych poj\u0119\u0107 i informacji kt\xF3re powiniene\u015B
+        posiada\u0107.</p>\n                <p><a href=\"/teksty/kanaly\"><b>Kana\u0142y</b></a>
+        - informacje na temat zarz\u0105dzania kana\u0142ami i opis ich ustawie\u0144,</p>\n
+        \               <p><a href=\"/teksty/uzytkownicy\"><b>U\u017Cytkownicy</b></a>
+        - informacje na temat interakcji serwera z u\u017Cytkownikiem i opis ustawie\u0144,
+        kt\xF3re ka\u017Cdy mo\u017Ce sobie na\u0142o\u017Cy\u0107,</p>\n                <p><a
+        href=\"/teksty/p_kodowanie\"><b>Konwersja kodowania</b></a> - opis naszego
+        autorskiego modu\u0142u do konwersji kodowania.</p>\n                <p><a
+        href=\"/teksty/p_problemy\"><b>Cz\u0119ste problemy</b></a> - czyli FAQ, odpowiedzi
+        na cz\u0119sto zadawane przez u\u017Cytkownik\xF3w pytania.</p>\n                <h3>Statystyki</h3>\n
+        \               <p><a href=\"/statystyki\"><b>Podsumowanie</b></a> - generalne
+        informacje na temat wykorzystania sieci.</p>\n                <p><a href=\"/statystyki/wykresy\"><b>Wykresy</b></a>
+        - graficzna reprezentacja ilo\u015Bci u\u017Cytkownik\xF3w i kana\u0142\xF3w
+        w przedziale czasu.</p>\n                <p><a href=\"/statystyki/kanaly\"><b>Lista
+        kana\u0142\xF3w</b></a> - lista najwi\u0119kszych kana\u0142\xF3w na sieci.</p>\n
+        \               <p><a class=\"external\" href=\"http://statystyki.pirc.pl/kanaly/\"><b>Statystyki
+        kana\u0142\xF3w</b></a> - strona pozwalaj\u0105ca obejrze\u0107 informacje
+        dotycz\u0105ce poszczeg\xF3lnych kana\u0142\xF3w.</p>\n                \n
+        \               <h3>Kontakt</h3>\n                <p><a href=\"/teksty/kontakt\"><b>Kontakt</b></a>
+        - alternatywna droga kontaktu z administracj\u0105.</p>\n\t\t</td></tr>\n\t\t</table>\n
+        \       </div>\n    </div>\n\n    <div id=\"footer\">\n        &copy; 2010-2014
+        <a href=\"http://pirc.pl\">PIRC.PL</a> - Wszelkie prawa zastrze\u017Cone<br/>\n
+        \       <small>Design and code by <a href=\"http://pirc.pl\">PIRC.PL</a> &middot;
+        valid <a rel=\"nofollow\" href=\"http://validator.w3.org/check?uri=referer\">xhtml</a>,
+        <a rel=\"nofollow\" href=\"http://jigsaw.w3.org/css-validator/check/referer\">css</a></small>\n
+        \   </div>\n</body>\n</html>\n"
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Mon, 15 Apr 2019 21:20:13 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - nginx/1.13.7
+      Set-Cookie:
+      - pircsession=n1bsq2i73bjeik79sqg771efb0; path=/
+      Transfer-Encoding:
+      - chunked
+      X-Powered-By:
+      - PHP/5.6.23
+    status:
+      code: 200
+      message: OK
+version: 1

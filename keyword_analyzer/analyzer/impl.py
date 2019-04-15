@@ -32,7 +32,7 @@ def parse_url(url: str) -> BeautifulSoup:
     if not response.ok:
         raise FetchError('Error fetching URL')
 
-    soup = BeautifulSoup(response.content)
+    soup = BeautifulSoup(response.content, 'html.parser')
 
     return soup
 
@@ -44,7 +44,12 @@ def get_keywords(soup: BeautifulSoup) -> List:
         return []
 
     tags = found.attrs['content']
-    result = [tag.strip() for tag in tags.split(',')]
+
+    # sometimes keywords are separated with space instead of comma
+    if ',' in tags:
+        result = [tag.strip() for tag in tags.split(',')]
+    else:
+        result = [tag for tag in tags.split()]
 
     return result
 
@@ -54,7 +59,7 @@ def search_for_keywords(soup: BeautifulSoup, keyword: str) -> int:
     return len(found)
 
 
-def url_statistics(url:str) -> List[Dict]:
+def url_statistics(url: str) -> List[Dict]:
     soup = parse_url(url)
     keywords = get_keywords(soup)
     result = []
